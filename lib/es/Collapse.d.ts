@@ -1,0 +1,22 @@
+import * as React from 'react';
+import { TransitionCallbacks } from './helpers';
+
+export interface CollapseProps
+  extends TransitionCallbacks,
+    React.ClassAttributes<Collapse> {
+  in?: boolean;
+  id: string;
+  mountOnEnter?: boolean;
+  unmountOnExit?: boolean;
+  appear?: boolean;
+  timeout?: number;
+  dimension?: 'height' | 'width' | (() => 'height' | 'width');
+  getDimensionValue?: (
+    dimension: number,
+    element: React.ReactElement<any>,
+  ) => number;
+  role?: string;
+}
+declare class Collapse extends React.Component<CollapseProps> {}
+
+export default Collapse;

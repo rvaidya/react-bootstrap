@@ -1,6 +1,4 @@
 
-
-lib/
 coverage/
 www/.cache/
 www/public/
@@ -90,3 +88,4 @@ typings/
 
 *~
 .DS_Store
+
