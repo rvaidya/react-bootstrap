@@ -5,7 +5,6 @@ export interface CollapseProps
   extends TransitionCallbacks,
     React.ClassAttributes<Collapse> {
   in?: boolean;
-  id: string;
   mountOnEnter?: boolean;
   unmountOnExit?: boolean;
   appear?: boolean;
